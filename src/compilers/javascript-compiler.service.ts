@@ -8,7 +8,7 @@ export class JavascriptCompilerService {
   compile(code) {
     const uuid = uuidv4();
     const fileName = `${uuid}.js`;
-    const filePath = `./temp/${fileName}`;
+    const filePath = `${fileName}`;
     fs.writeFileSync(filePath, code);
     let output;
     try {
